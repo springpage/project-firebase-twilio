@@ -5,15 +5,15 @@ import SignInForm from './components/SignInForm';
 import firebase from 'firebase';
 
 export default class App extends React.Component {
-  componentDidMount(){
+  componentDidMount() {
     const config = {
-        apiKey: "AIzaSyBcAdxMuNgULR0X4L2OcpnvDkDumzHQvXg",
-        authDomain: "one-time-password-30206.firebaseapp.com",
-        databaseURL: "https://one-time-password-30206.firebaseio.com",
-        projectId: "one-time-password-30206",
-        storageBucket: "one-time-password-30206.appspot.com",
-        messagingSenderId: "352516860518"
-      };
+      apiKey: 'AIzaSyBcAdxMuNgULR0X4L2OcpnvDkDumzHQvXg',
+      authDomain: 'one-time-password-30206.firebaseapp.com',
+      databaseURL: 'https://one-time-password-30206.firebaseio.com',
+      projectId: 'one-time-password-30206',
+      storageBucket: 'one-time-password-30206.appspot.com',
+      messagingSenderId: '352516860518'
+    };
     firebase.initializeApp(config);
   }
   render() {
@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'space-around',
-  },
+    justifyContent: 'space-around'
+  }
 });
